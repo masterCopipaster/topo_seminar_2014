@@ -1,6 +1,9 @@
+encoding  utf-8
 # 2024.02.17 created by TopoDroid v 5.1.40
 
 survey Kiseli_R06 -title "Kiseli R06"
+
+input "Kiseli_R06-1p.th2"
 
 
 
@@ -184,3 +187,4 @@ survey Kiseli_R06 -title "Kiseli R06"
   endcenterline
 
 endsurvey
+
