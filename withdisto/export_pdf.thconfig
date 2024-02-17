@@ -18,7 +18,7 @@ layout pdf-map  -copy symbols_mine
   symbol-show point cave-station            # Пикеты (show - вкл., hide - выкл.)
   symbol-show point flag:entrance           # Входы (show - вкл., hide - выкл.)
   symbol-show point flag:dig                # Раскопы (show - вкл., hide - выкл.)
-  debug station-names                       # Показывать номера пикетов
+#  debug station-names                       # Показывать номера пикетов
   debug all                                 # Режим отладки
   color map-fg scrap                        # Раскраска по скрапам
 #  color-legend off                          # Отключаем цветовую легенду
