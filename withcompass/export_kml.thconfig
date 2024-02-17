@@ -1,0 +1,5 @@
+encoding  utf-8
+source withcompass.th
+
+ export model -output withcompass.kml 
+ export map -output withcompass1.kml -projection plan

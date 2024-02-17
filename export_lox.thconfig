@@ -1,0 +1,4 @@
+encoding  utf-8
+source topo_seminar_2024.th
+
+ export model -output topo_seminar_2024.lox -enable all -wall-source all

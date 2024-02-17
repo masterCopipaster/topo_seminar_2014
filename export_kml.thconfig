@@ -1,0 +1,5 @@
+encoding  utf-8
+source topo_seminar_2024.th
+
+ export model -output topo_seminar_2024.kml 
+ export map -output topo_seminar_2024_1.kml -projection plan

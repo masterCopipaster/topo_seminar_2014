@@ -1,0 +1,31 @@
+encoding  utf-8
+survey topo_seminar_2024 -title "Конфликтпоколеньевский блок"
+
+### "СЪЁМКА" С КООРДИНАТАМИ ВХОДА ###
+
+### ФАЙЛЫ СЪЁМОК ###
+   input withdisto/withdisto.th
+   input withcompass/withcompass.th
+
+### СТЫКОВКА ПИКЕТОВ РАЗНЫХ СЪЁМОК ###
+
+   
+
+### СТЫКОВКА СКРАПОВ (АБРИСОВ) ###
+
+ 
+  
+    
+### ВКЛЮЧЕНИЕ ЧАСТЕЙ АБРИСА (СКРАПОВ ИЛИ МАПОВ) В ИТОГОВЫЙ МАП (КАРТУ) ###
+  map topo_seminar_2024p -projection plan
+	withdistop@withdisto
+	withcompassp@withcompass
+  endmap   
+  
+  map topo_seminar_2024_linep -projection plan
+    withdisto_linep@withdisto
+	withcompass_linep@withcompass
+  endmap
+
+endsurvey
+

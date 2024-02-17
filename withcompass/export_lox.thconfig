@@ -1,0 +1,4 @@
+encoding  utf-8
+source withcompass.th
+
+ export model -output withcompass.lox -enable all -wall-source all
