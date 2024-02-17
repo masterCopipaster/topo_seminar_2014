@@ -12,6 +12,7 @@ survey withdisto -title "кам. Зумерско-Дистовская"
    #input source/sem23_uch03/sem23_uch03.th
    input source/Kiseli_R06/Kiseli_R06.th
    input source/2024_2_03/2024_2_03.th
+   input source/Kiseli_02/Kiseli_02.th
    
 
 ### СТЫКОВКА ПИКЕТОВ РАЗНЫХ СЪЁМОК ###
@@ -22,6 +23,7 @@ survey withdisto -title "кам. Зумерско-Дистовская"
    #equate R06@sem23_uch06 R06@04_yh
    #equate R01@04_yh 11@sem23_uch03
    #equate R04@sem23_uch06 R4@sem23-uch05
+   #equate R02@Kiseli_02 R02@2024_2_03
    
 
 ### СТЫКОВКА СКРАПОВ (АБРИСОВ) ###
