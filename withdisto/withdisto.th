@@ -35,12 +35,14 @@ survey withdisto -title "кам. Зумерско-Дистовская"
 ### ВКЛЮЧЕНИЕ ЧАСТЕЙ АБРИСА (СКРАПОВ ИЛИ МАПОВ) В ИТОГОВЫЙ МАП (КАРТУ) ###
   map withdistop -projection plan
     m1p@2024_2_03
+    m1p@Kiseli_R06
    
     
   endmap   
-  map withdisto_linep -projection plan
-    Kiseli_R06
-  endmap
+  #map withdisto_linep -projection plan
+    #Kiseli_R06
+    
+  #endmap
 
 endsurvey
 
