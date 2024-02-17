@@ -42,7 +42,7 @@ layout pdf-map  -copy symbols_mine
   doc-author "Спелеоклуб Перово"            # Автор документа
 endlayout
 
-select withcompassp@Primer
-select withcompass_linep@Primer
+#select withcompassp@withcompass
+select withcompass_linep@withcompass
   
 export map -proj plan -fmt pdf -layout pdf-map -o Primer_map.pdf

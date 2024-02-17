@@ -4,41 +4,39 @@ survey withcompass -title "кам. Компасяцкая"
 ### "СЪЁМКА" С КООРДИНАТАМИ ВХОДА ###
    centreline
      cs lat-long
-     fix R07 55.475298 37.807551 173.2     # координаты Камкино на самом деле
-     station R07 "R07" entrance
+     fix R02 55.475298 37.807551 173.2     # координаты Камкино на самом деле
+     station R02 "R02" entrance
    endcentreline
 
 ### ФАЙЛЫ СЪЁМОК ###
-   input source/sem23_uch06/sem23_uch06.th
-   input source/sem23_uch08/sem23_uch08.th
-   input source/04_yh/04_yh.th
-   input source/sem23_uch03/sem23_uch03.th
-   input source/sem23-uch05/sem23-uch05.th
+   input source/kiseli_s1_1/kiseli_s1_1.th
+   input source/Kiseli_02/Kiseli_02.th
+
 
 ### СТЫКОВКА ПИКЕТОВ РАЗНЫХ СЪЁМОК ###
-   equate R07@sem23_uch06 R07@sem23_uch08
-   equate R07@sem23_uch06 R07 
-   equate R06@sem23_uch06 R06@04_yh
-   equate R01@04_yh 11@sem23_uch03
-   equate R04@sem23_uch06 R4@sem23-uch05
+   equate R02@kiseli_s1_1 R02@Kiseli_02
+   equate R02@kiseli_s1_1 R02
+   
    
 
 ### СТЫКОВКА СКРАПОВ (АБРИСОВ) ###
-  join sem23_uch06-1p@sem23_uch06 sem23_uch08-uch08p@sem23_uch08 -smooth on     
-  join sem23_uch06-1p@sem23_uch06 sem23-uch05-1p@sem23-uch05 -smooth on
+  #join sem23_uch06-1p@sem23_uch06 sem23_uch08-uch08p@sem23_uch08 -smooth on     
+  #join sem23_uch06-1p@sem23_uch06 sem23-uch05-1p@sem23-uch05 -smooth on
  
   
     
 ### ВКЛЮЧЕНИЕ ЧАСТЕЙ АБРИСА (СКРАПОВ ИЛИ МАПОВ) В ИТОГОВЫЙ МАП (КАРТУ) ###
-  map withcompassp -projection plan
-    m1p@sem23_uch06
-    much08p@sem23_uch08
-    m1p@sem23_uch03
-    m1p@sem23-uch05
+  #map withcompassp -projection plan
+    #m1p@sem23_uch06
+    #much08p@sem23_uch08
+    #m1p@sem23_uch03
+    #m1p@sem23-uch05
     
-  endmap   
+  #endmap   
   map withcompass_linep -projection plan
-    04_yh
+  kiseli_s1_1
+  Kiseli_02
+  
   endmap
 
 endsurvey
