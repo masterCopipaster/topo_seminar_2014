@@ -1,3 +1,4 @@
+encoding  utf-8
 # 2024.02.14 created by TopoDroid v 5.1.40
 
 survey Kiseli_02 -title "Kiseli 02"
@@ -570,10 +571,12 @@ survey Kiseli_02 -title "Kiseli 02"
     17 . 5.37 248.3 -1.8
   endcenterline
 
-  # input "Kiseli_02-1p.th2"
 
-  # map m1p -projection plan
-  #   Kiseli_02-1p
-  # endmap
+ input "Kiseli_02-1p.th2"
+
+ map m1p -projection plan
+ Kiseli_02-1p
+ endmap
 
 endsurvey
+

@@ -9,36 +9,37 @@ survey withdisto -title "кам. Зумерско-Дистовская"
    endcentreline
 
 ### ФАЙЛЫ СЪЁМОК ###
-   input source/sem23_uch06/sem23_uch06.th
-   input source/sem23_uch08/sem23_uch08.th
-   input source/04_yh/04_yh.th
-   input source/sem23_uch03/sem23_uch03.th
-   input source/sem23-uch05/sem23-uch05.th
+   #input source/sem23_uch03/sem23_uch03.th
+   input source/Kiseli_R06/Kiseli_R06.th
+   input source/2024_2_03/2024_2_03.th
+   input source/Kiseli_02/Kiseli_02.th
+   
 
 ### СТЫКОВКА ПИКЕТОВ РАЗНЫХ СЪЁМОК ###
-   equate R07@sem23_uch06 R07@sem23_uch08
-   equate R07@sem23_uch06 R07 
-   equate R06@sem23_uch06 R06@04_yh
-   equate R01@04_yh 11@sem23_uch03
-   equate R04@sem23_uch06 R4@sem23-uch05
+   equate R07 R06@Kiseli_R06
+   equate r01@2024_2_03 R01@Kiseli_R06
+   #equate R07@sem23_uch06 R07@sem23_uch08
+   #equate R07@sem23_uch06 R07 
+   #equate R06@sem23_uch06 R06@04_yh
+   #equate R01@04_yh 11@sem23_uch03
+   #equate R04@sem23_uch06 R4@sem23-uch05
+   #equate R02@Kiseli_02 R02@2024_2_03
    
 
 ### СТЫКОВКА СКРАПОВ (АБРИСОВ) ###
-  join sem23_uch06-1p@sem23_uch06 sem23_uch08-uch08p@sem23_uch08 -smooth on     
-  join sem23_uch06-1p@sem23_uch06 sem23-uch05-1p@sem23-uch05 -smooth on
+  #join sem23_uch06-1p@sem23_uch06 sem23_uch08-uch08p@sem23_uch08 -smooth on     
+  #join sem23_uch06-1p@sem23_uch06 sem23-uch05-1p@sem23-uch05 -smooth on
  
   
     
 ### ВКЛЮЧЕНИЕ ЧАСТЕЙ АБРИСА (СКРАПОВ ИЛИ МАПОВ) В ИТОГОВЫЙ МАП (КАРТУ) ###
   map withdistop -projection plan
-    m1p@sem23_uch06
-    much08p@sem23_uch08
-    m1p@sem23_uch03
-    m1p@sem23-uch05
+    m1p@2024_2_03
+   
     
   endmap   
   map withdisto_linep -projection plan
-    04_yh
+    Kiseli_R06
   endmap
 
 endsurvey
