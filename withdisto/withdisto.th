@@ -13,17 +13,18 @@ survey withdisto -title "кам. Зумерско-Дистовская"
    input source/Kiseli_R06/Kiseli_R06.th
    input source/2024_2_03/2024_2_03.th
    input source/Kiseli_02/Kiseli_02.th
+   input source/Kiseli_05/Kiseli_05.th
+    
    
 
 ### СТЫКОВКА ПИКЕТОВ РАЗНЫХ СЪЁМОК ###
    equate R07 R06@Kiseli_R06
    equate r01@2024_2_03 R01@Kiseli_R06
-   #equate R07@sem23_uch06 R07@sem23_uch08
-   #equate R07@sem23_uch06 R07 
-   #equate R06@sem23_uch06 R06@04_yh
-   #equate R01@04_yh 11@sem23_uch03
-   #equate R04@sem23_uch06 R4@sem23-uch05
-   #equate R02@Kiseli_02 R02@2024_2_03
+   equate R02@Kiseli_02 r02@2024_2_03
+   equate R03@Kiseli_05 R03@Kiseli_02
+   
+ 
+   
    
 
 ### СТЫКОВКА СКРАПОВ (АБРИСОВ) ###
@@ -34,8 +35,10 @@ survey withdisto -title "кам. Зумерско-Дистовская"
     
 ### ВКЛЮЧЕНИЕ ЧАСТЕЙ АБРИСА (СКРАПОВ ИЛИ МАПОВ) В ИТОГОВЫЙ МАП (КАРТУ) ###
   map withdistop -projection plan
+
     m1p@2024_2_03
     m1p@Kiseli_R06
+    m1p@Kiseli_05
    
     
   endmap   
@@ -43,6 +46,7 @@ survey withdisto -title "кам. Зумерско-Дистовская"
     #Kiseli_R06
     
   #endmap
+
 
 endsurvey
 

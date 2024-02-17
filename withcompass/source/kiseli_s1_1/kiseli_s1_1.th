@@ -1,9 +1,13 @@
+encoding  utf-8
 # 2024.02.17 created by TopoDroid v 5.1.40
 
 survey kiseli_s1_1 -title "kiseli s1 1"
     # замеры выполнены рулеткой и компасом 
 
-
+input kiseli_s1_1-1p.th2
+map m1p -projection plan 
+kiseli_s1_1-1p
+endmap
 
   centerline
     date 2024.02.03 
@@ -184,3 +188,4 @@ survey kiseli_s1_1 -title "kiseli s1 1"
   endcenterline
 
 endsurvey
+
