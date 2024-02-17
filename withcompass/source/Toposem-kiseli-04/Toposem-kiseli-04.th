@@ -1,7 +1,12 @@
 # 2024.02.17 created by TopoDroid v 5.1.40
 
 survey Toposem-kiseli-04 -title "Toposem-kiseli-04"
+    # замеры выполнены рулеткой и компасом 
 
+input Toposem-kiseli-04-1p.th2
+map m1p -projection plan 
+Toposem-kiseli-04-1p
+endmap
   centerline
     date 2024.02.03 
     # team Горин, Федотов 
@@ -28,11 +33,5 @@ survey Toposem-kiseli-04 -title "Toposem-kiseli-04"
     7 8 5.79 149.0 0.0
     7 9 6.40 230.0 0.0
   endcenterline
-
-  # input "Toposem-kiseli-04-1p.th2"
-
-  # map m1p -projection plan
-  #   Toposem-kiseli-04-1p
-  # endmap
 
 endsurvey
